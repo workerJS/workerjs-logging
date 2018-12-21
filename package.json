@@ -1,0 +1,13 @@
+{
+  "name": "workerjs-logging",
+  "version": "0.0.0",
+  "description": "Logging system for workerJS. ",
+  "main": "index.js",
+  "repository": "git@github.com:workerJS/workerjs-logging.git",
+  "author": "nemanjan00 <nemanjan00@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "query": "https://github.com/protobi/query.git#3d92a8b"
+  }
+}
