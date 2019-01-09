@@ -1,4 +1,4 @@
-const query = require('query');
+const sift = require('sift').default;
 
 const logger = {
 	_filters = {},
@@ -27,8 +27,8 @@ const logger = {
 	},
 
 	applyFilters: (object) => {
-		return Object.keys(logger._filters).filter((filterName) => query.query([object], logger._filters[filterName]).length > 0);
-	},
+        	return Object.keys(logger._filters).filter((filterName) => sift(logger._filters[filterName], [object]).length > 0);
+    	},
 
 	insert: (config, object) => {
 		return new Promise((resolve, reject) => {
